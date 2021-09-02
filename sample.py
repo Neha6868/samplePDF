@@ -6,9 +6,6 @@ pdfFile = open('sample.pdf', 'rb')
 # create PDFFileReader object to read the file
 pdfReader = PdfFileReader(pdfFile)
 
-print("PDF File name: " + str(pdfReader.getDocumentInfo().title))
-print("PDF File created by: " + str(pdfReader.getDocumentInfo().creator))
-print("- - - - - - - - - - - - - - - - - - - -")
 
 numOfPages = pdfReader.getNumPages()
 
