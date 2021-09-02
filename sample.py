@@ -10,10 +10,8 @@ pdfReader = PdfFileReader(pdfFile)
 numOfPages = pdfReader.getNumPages()
 
 for i in range(0, numOfPages):
-	print("Page Number: " + str(i))
-	print("- - - - - - - - - - - - - - - - - - - -")
 	pageObj = pdfReader.getPage(i)
 	print(pageObj.extractText())
-	print("- - - - - - - - - - - - - - - - - - - -")
+	
 # close the PDF file object
 pdfFile.close()
